@@ -491,8 +491,8 @@ function! s:DetectDeclared() abort
     endif
   catch
   endtry
-  let [detected.editorconfig, detected.root] = s:DetectEditorConfig(detected.path)
-  call extend(detected.declared, s:EditorConfigToOptions(detected.editorconfig))
+  #let [detected.editorconfig, detected.root] = s:DetectEditorConfig(detected.path)
+  #call extend(detected.declared, s:EditorConfigToOptions(detected.editorconfig))
   call extend(detected.declared, s:ModelineOptions())
   return detected
 endfunction
